@@ -72,3 +72,8 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
         3. $: docker-compose up -d
         4. change git origin, commit, push
         5. develop
+
+## Jaisocx official site
+https://jaisocx.com/
+
+Documentation: https://jaisocx.com/documentation.html 
