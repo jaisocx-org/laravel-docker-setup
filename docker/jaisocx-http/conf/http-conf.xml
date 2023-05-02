@@ -11,14 +11,12 @@
                            url="/"
                            path="/var/www/laravel/public/"
                            cache="update"
-                           compression="YES"
-                           list="NO"
+                           list="false"
                            each-folder-content-file-name="index.php"/>
                     <alias art="file"
                            url="/${any}"
                            path="/var/www/laravel/public/index.php"
-                           cache="update"
-                           compression="YES"/>
+                           cache="update"/>
                 </domain>
             </server>
         </servers>
