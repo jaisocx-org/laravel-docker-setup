@@ -63,7 +63,7 @@ COPY ./conf/php/php.ini /usr/local/etc/php/php.ini
 COPY ./conf/php/conf.d/docker-php-ext-xdebug.ini /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini 
 COPY ./conf/php-fpm.d/www.conf /usr/local/etc/php-fpm.d/www.conf
 
-WORKDIR /var/www/symfony
+WORKDIR /var/www/laravel/application
 
 EXPOSE 9000
 

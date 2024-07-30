@@ -5,8 +5,8 @@ services:
       args:
         TIMEZONE: "Europe/Zurich"
     volumes:
-      - ./symfony/:/var/www/symfony/
-      - ./docker/php/logs/:/symfony-logs/
+      - ./laravel/:/var/www/laravel/
+      - ./docker/php/logs/:/laravel-logs/
     networks:
       - jaisocx
     extra_hosts:
@@ -21,11 +21,11 @@ services:
       - ./docker/jaisocx-http/conf/:/usr/lib/jaisocx-http/apps/congratulations/conf/
       - ./docker/jaisocx-http/etc/:/usr/lib/jaisocx-http/etc/
       - ./docker/jaisocx-http/logs/:/usr/lib/jaisocx-http/logs/
-      - ./symfony/:/var/www/symfony/
+      - ./laravel/:/var/www/laravel/
     depends_on:
       - php
     ports:
-      - 2291:80
+      - 2292:80
     networks:
       - jaisocx
     environment:

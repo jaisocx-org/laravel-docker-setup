@@ -1,6 +1,6 @@
-# Symfony, published with Jaisocx webserver docker image
+# laravel, published with Jaisocx webserver docker image
 
-1. git clone git@github.com:jaisocx-org/symfony-docker-setup.git
+1. git clone git@github.com:jaisocx-org/laravel-docker-setup.git
 2. docker-compose build
 3. docker-compose up -d
 4. docker-compose exec php composer install
@@ -9,7 +9,7 @@
 
 
 ## XDebug in VSCode
-- in the file ./.vscode/launch.json there is the ready to use config with this Symfony with Jaisocx setup.
+- in the file ./.vscode/launch.json there is the ready to use config with this laravel with Jaisocx setup.
 - xdebug port for this project is 9007
 - to choose another xdebug port, feel free to update 2 files: 
   1. launch.json 
