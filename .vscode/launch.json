@@ -22,7 +22,7 @@
       "program": "${file}",
       "cwd": "${fileDirname}",
       "externalConsole": false,
-      "port": 9007
+      "port": 9008
     }
   ]
 }
