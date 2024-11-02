@@ -8,7 +8,7 @@ services:
       - ./laravel/:/var/www/laravel/
       - ./docker/php/logs/:/laravel-logs/
     networks:
-      - jaisocx
+      - jaisocx-laravel
     extra_hosts:
       - "host.docker.internal:host-gateway"
     environment:
@@ -20,14 +20,16 @@ services:
     volumes:
       - ./docker/jaisocx-http/conf/:/usr/lib/jaisocx-http/apps/congratulations/conf/
       - ./docker/jaisocx-http/etc/:/usr/lib/jaisocx-http/etc/
+      - ./docker/jaisocx-http/ssl/:/usr/lib/jaisocx-http/ssl/
       - ./docker/jaisocx-http/logs/:/usr/lib/jaisocx-http/logs/
       - ./laravel/:/var/www/laravel/
     depends_on:
       - php
     ports:
-      - 2292:80
+      - 443:443
+      - 80:80
     networks:
-      - jaisocx
+      - jaisocx-laravel
     environment:
       PHP_FPM_HOST: "php:9000"
       JAVA_XMS: "2g"
@@ -35,6 +37,6 @@ services:
   #      php hostname like php service name="php", port from docker/php/conf/php-fpm.d/www.conf "listen" directive (listen = 127.0.0.1:9000)
 
 networks:
-  jaisocx:
+  jaisocx-laravel:
     driver: bridge
 

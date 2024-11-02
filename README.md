@@ -4,8 +4,9 @@
 2. docker-compose build
 3. docker-compose up -d
 4. docker-compose exec php composer install
-4. http://localhost:2292/
-4. That's all!
+5. add line to file /etc/hosts: 127.0.0.1  example-laravel-dockerized.brightday.email
+6. In browser, context menu paste and go: example-laravel-dockerized.brightday.email
+7. That's all!
 
 
 ## XDebug in VSCode
